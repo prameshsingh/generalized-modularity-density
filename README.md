@@ -1,2 +1,2 @@
-# generalized_modularity_density
+# Generalized Modularity Density
 Maximization of generalized modularity density using RenEEL algorithm
