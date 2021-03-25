@@ -29,7 +29,7 @@ To use the RenEEL algorithmic paradiagm, follow the steps below:
 	* argument 2: Positive Integer, ensemble size divided by CPU numbers (suppose you are using 4 CPU cores and 5 here, your ensemble size will be 4*5=20)
 	* argument 3: Positive Integer, ensemble size divided by CPU numbers of partitions of the reduced network for iteration part in RenEEL (suppose you are using 4 CPU cores and 2 here, your ensemble size during iteration of RenEEL will be 4*2=8)
 	* argument 4: Positive Integer, seed for random number generator
-	* argument 5: Non-negative Float, for parameter \chi in Generalized Modularity Density formula (\chi = 0 for Modularity)
+	* argument 5: Non-negative Float, for parameter $\chi$ in Generalized Modularity Density formula ($\chi$ = 0 for Modularity)
 
 	* Example:
 
