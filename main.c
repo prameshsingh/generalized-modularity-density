@@ -8,7 +8,7 @@
 
 
 int *cols;
-
+char *filename;
 
 void inputGraph(struct graph *G);
 int cleansort(struct part *ensem,int kmax,int N);
@@ -161,7 +161,10 @@ int main(int argc, char *argv[])
     long i,j,k;
     int size;
 	FILE *fout;
-	fout=fopen("result.txt","w");
+	filename=(argv[6]); // input filename
+    char fname[40];
+    sprintf(fname,"results_%s",filename);
+	fout=fopen(fname,"w");
 
     size=omp_get_num_procs();
 	fprintf(fout,"number of processors: %d\nclock per second: %d\n",size,CLOCKS_PER_SEC);
@@ -341,7 +344,9 @@ int main(int argc, char *argv[])
         sizeofRN=getscore(score,edgecc,G.N,know,ref);
         renorm(G,ref);
         G.com=sizeofRN;
-	outpart(ensemble[0],G.n, G.N);
+
+    sprintf(fname,"partition_%s",filename);    
+	outpart(ensemble[0],G.n, G.N,fname);
 	double Qfinal;
 	Qfinal=compQ(G);
 	printf("Qfinal=%lf\n",Qfinal/(2*G.n));
@@ -572,7 +577,9 @@ void inputGraph(struct graph *G)
 	int i,n1,n2,Gn,*nnl;
 	double w;
 	FILE *fi;
-	fi=fopen("info.txt","r");
+	char fname[40];
+	sprintf(fname,"info_%s",filename);
+	fi=fopen(fname,"r");
 	fscanf(fi,"%d%d",&G->N,&Gn);
 	fclose(fi);
 	G->n=0;
@@ -583,7 +590,8 @@ void inputGraph(struct graph *G)
 	G->dl=(double*)malloc(sizeof(double)*G->N);
 	nnl=(int*)malloc(sizeof(int)*G->N);
 
-	fi=fopen("degree.txt","r");
+	sprintf(fname,"degree_%s",filename);
+	fi=fopen(fname,"r");
 	for (i=0;i<G->N;i++)
 	{
 		fscanf(fi,"%d%lf",nnl+i,G->dl+i);
@@ -592,7 +600,8 @@ void inputGraph(struct graph *G)
 	G->n/=2;
 	fclose(fi);
 
-	fi=fopen("clean.txt","r");
+	sprintf(fname,"clean_%s",filename);
+	fi=fopen(fname,"r");
 	for (i=0;i<G->N;i++)
 	{
 		G->ml[i]=(int*)malloc(sizeof(int)*2);

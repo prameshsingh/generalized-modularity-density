@@ -30,12 +30,13 @@ To use the RenEEL algorithmic paradiagm, follow the steps below:
 	* argument 3: Positive Integer, ensemble size divided by CPU numbers of partitions of the reduced network for iteration part in RenEEL (Suppose you are using 4 CPU cores and 2 here, your ensemble size during iteration of RenEEL will be 4*2=8)
 	* argument 4: Positive Integer, seed for random number generator
 	* argument 5: Non-negative Float, for parameter $\chi$ in Generalized Modularity Density formula ($\chi$ = 0 for Modularity)
+	* argument 6: Input file name (edgelist), for example `karate.txt`. The file should have already been processed using `work.sh` as described in 1.
 
 	* Example:
 
-		`./a.out 2 5 2 12345 1.0`
+		`./a.out 2 5 2 12345 1.0 karate.txt`
 
 4. Collect results
 
-	* file 1: partition.txt 
-	* file 2: result.txt, a copy will also be printed to stdout
+	* file 1: `partition_karate.txt` (or partition_[inputfile])
+	* file 2: `results_karate.txt` (or results_[inputfile]), a copy will also be printed to stdout

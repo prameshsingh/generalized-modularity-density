@@ -2,7 +2,7 @@
 
 
 int findxiny(int x, int *y);
-int outpart (struct part ans,double n,int N);
+int outpart (struct part ans,double n,int N, char *fname);
 int updateG(struct graph *G, int x, int y);
 void extrafG(struct part ans,struct graph G,int *s);
 void gcopy(struct graph G,struct graph *Ga);

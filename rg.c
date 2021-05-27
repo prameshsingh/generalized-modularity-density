@@ -16,12 +16,12 @@ int findxiny(int x, int *y)
 }
 
 
-int outpart(struct part ans,double n, int N)
+int outpart(struct part ans,double n, int N, char *fname)
 {
     int i;
     printf("%d\t%lf\n",ans.com,ans.Q/(2*n));
 	FILE *fo;
-	fo=fopen("partition.txt","w");
+	fo=fopen(fname,"w");
     	for (i=0;i<N;i++)
     		fprintf(fo,"%d\n",ans.pa[i]);
 	fclose(fo);
