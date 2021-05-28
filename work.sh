@@ -8,7 +8,7 @@ awk '{if ($1<$2) print $2, $1, $3; else print $1" "$2" "$3}' $1 | sort -n -k 1,1
 
 let edges=`awk 'END{print NR}' clean_${inputfile}`
 echo edges=$edges
-let nodes=`tail -n 1 clean.txt | cut -d ' ' -f 1`
+let nodes=`tail -n 1 clean_${inputfile} | cut -d ' ' -f 1`
 echo nodes=$nodes
 
 
