@@ -2,7 +2,17 @@
 
 Maximization of generalized modularity density ($Q_g$) using RenEEL algorithm
 
-To use the RenEEL algorithmic paradiagm, follow the steps below:
+
+If you use this code, please cite the following preprint: 
+Resolution limit revisited: community detection using generalized modularity density.
+J. Guo, P. Singh, K. E. Bassler,
+arXiv:2012.14543; https://arxiv.org/abs/2012.14543
+
+
+The example network used here for illustration is the Zachary’s Karate Club network (W. W. Zachary, Journal of Anthropological Research. 33 (4): 452–473 (1977)).
+
+
+To use the code, follow the steps below:
 
 1. Prepare data
 
