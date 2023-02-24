@@ -43,7 +43,7 @@ To use the code, follow the steps below:
 	* argument 2: Positive Integer, ensemble size divided by CPU numbers (It's like this because we use parallel programmming to generate the ensemble faster. Suppose you are using 4 CPU cores and 5 here, your ensemble size will be 4*5=20)
 	* argument 3: Positive Integer, ensemble size divided by CPU numbers of partitions of the reduced network for iteration part in RenEEL (Suppose you are using 4 CPU cores and 2 here, your ensemble size during iteration of RenEEL will be 4*2=8)
 	* argument 4: Positive Integer, seed for random number generator
-	* argument 5: Real number, for parameter $\chi$ in Generalized Modularity Density formula ($\chi$ = 0 for Modularity) (We mainly use $\chi>=0$ to obtain finer structure beyond Modulartiy. But if needed, negative $\chi$ can also be used to obtain coarser sturture than Modularity.)
+	* argument 5: Real number, for parameter $\chi$ in Generalized Modularity Density formula ($\chi$ = 0 for Modularity) (We mainly use $\chi>=0$ to obtain finer structure beyond Modulartiy. But if needed, negative $\chi$ might also be used to obtain coarser sturture than Modularity.)
 	* argument 6: Input file name (edgelist), for example `karate.txt`. The file should have already been processed using `work.sh` as described in 1.
 
 	* Example:
