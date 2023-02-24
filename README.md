@@ -6,9 +6,11 @@ Maximization of generalized modularity density ($Q_g$) using RenEEL algorithm
 If you use this code, please cite the following preprint:
 
 Resolution limit revisited: community detection using generalized modularity density.
+
 J. Guo, P. Singh, K. E. Bassler, arXiv:2012.14543; https://arxiv.org/abs/2012.14543
 
-Reduced Network Extremal Ensemble Learning (RenEEL) Algorithm
+Reduced network extremal ensemble learning (RenEEL) scheme for community detection in complex networks.
+
 J. Guo, P. Singh, K. E. Bassler, Scientific Reports 9, 14234 (2019).
 
 The example network used here for illustration is the Zachary’s Karate Club network (W. W. Zachary, Journal of Anthropological Research. 33 (4): 452–473 (1977)).
