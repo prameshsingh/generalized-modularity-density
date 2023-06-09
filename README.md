@@ -7,7 +7,7 @@ If you use this code, please cite the followings:
 
 1. Resolution limit revisited: community detection using generalized modularity density.
 
-	J. Guo, P. Singh, K. E. Bassler, arXiv:2012.14543; https://arxiv.org/abs/2012.14543
+	J. Guo, P. Singh, K. E. Bassler, J. Phys. Complex. 4 025001 (2023)
 
 2. Reduced network extremal ensemble learning (RenEEL) scheme for community detection in complex networks.
 
