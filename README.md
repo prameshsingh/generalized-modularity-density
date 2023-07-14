@@ -20,7 +20,7 @@ To use the code, follow the steps below:
 
 1. Prepare data
 
-	* 1.1 Use an edgelist file including 3 columns (separated by space or tab with no header) with the last one representing the weight. (If the network is unweighted, just put 1 to the whole column. The network should be undirected. Self-loops will be ignored. See example in karate.txt)
+	* 1.1 Use an edgelist file including 3 columns (separated by space or tab with no header) with the last one representing the weight. (If the network is unweighted, just put 1 to the whole column. The network should be undirected. Self-loops will be ignored. Nodes must be labeled from 1 to N where N is the total number of nodes to consider. See example in karate.txt)
 	* 1.2 Use bash script (work.sh) to generate the three files required by the program. 
 	* Example:
 
